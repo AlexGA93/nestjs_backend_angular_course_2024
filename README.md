@@ -97,3 +97,39 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+## Docker (Linux)
+
+### Docker Commands
+- list images
+  ```
+  docker image ls
+  ```
+- list containers
+  ```
+  docker container ls
+  ```
+- docker remove image
+  ```
+  docker rmi <image_id>
+  ```
+- docker remove containers
+  ```
+  docker rm <container_id_or_name>
+  ```
+### docker-compose.yml
+
+To init our docker environment:
+```
+docker compose up -d
+```
+
+To turn off docker proccess:
+```
+docker compose down
+```
+
+To access to the mongo container's content 
+```
+docker exec -it <contianer-id> mongosh
+```

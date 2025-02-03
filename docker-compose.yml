@@ -1,0 +1,18 @@
+# version
+version: '3'
+
+# services
+services:
+  # database service called 'db'
+  db:
+    container_name: mean-db
+    image: mongo
+    # persistent database information
+    volumes:
+      # locally created folder to get inside mapped content of data/db
+      - ./mongo:/data/db
+      # internal port : external port
+    ports:
+      - 27017:27017
+
+    restart: always
