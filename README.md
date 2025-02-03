@@ -133,3 +133,13 @@ To access to the mongo container's content
 ```
 docker exec -it <contianer-id> mongosh
 ```
+
+### Create database inside container
+
+- access to the container
+  ```
+  docker conatiner ls
+  docker exec -it <container_id> mongosh
+
+  use <database_name>
+  ```
