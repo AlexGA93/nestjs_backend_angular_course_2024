@@ -143,3 +143,12 @@ docker exec -it <contianer-id> mongosh
 
   use <database_name>
   ```
+
+- access to database 
+  ```
+  show dbs
+  
+  use <database>
+
+  show collections
+  ```
